@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const Hero = () => {
   return (
-    <div className="grid grids-cols-1 lg:grid-cols-2 px-5 sm:px-20 py-10 gap-10">
+    <div className="grid grids-cols-1 lg:grid-cols-2 px-5 sm:px-20 pt-10 gap-10">
       <motion.div className="flex flex-col justify-center gap-4">
         <motion.h1
           initial={{ opacity: 0, y: 30 }}

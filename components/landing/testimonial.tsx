@@ -52,6 +52,24 @@ const cards = [
     clientName: 'Orlando Diggs',
     clientTitle: 'MD, Klex Company',
   },
+  {
+    id: 6,
+    rating: 5,
+    content:
+      'Lorem ipsum dolor sit amet,consectetur adipiscing elit.Suspendisse varius enim in eroselementum tristique. Duis cursus, miquis viverraornare.',
+    clientImage: '/images/sarah.png',
+    clientName: 'Orlando Diggs',
+    clientTitle: 'MD, Klex Company',
+  },
+  {
+    id: 7,
+    rating: 4,
+    content:
+      'Lorem ipsum dolor sit amet,consectetur adipiscing elit.Suspendisse varius enim in eroselementum tristique. Duis cursus, miquis viverraornare.',
+    clientImage: '/images/emily.png',
+    clientName: 'Orlando Diggs',
+    clientTitle: 'MD, Klex Company',
+  },
 ];
 
 const Testimonial = () => {
@@ -152,7 +170,7 @@ const Testimonial = () => {
         <Button
           onClick={() => scroll('left')}
           disabled={!scrollLeft}
-          className={`rounded-full h-12 w-12 ${
+          className={`rounded-full h-12 w-12 cursor-pointer ${
             scrollLeft ? '' : 'bg-gray-100'
           }`}
         >
@@ -161,7 +179,7 @@ const Testimonial = () => {
         <Button
           onClick={() => scroll('right')}
           disabled={!scrollRight}
-          className={`rounded-full h-12 w-12 ${
+          className={`rounded-full h-12 w-12 cursor-pointer ${
             scrollRight ? '' : 'bg-gray-100'
           }`}
         >

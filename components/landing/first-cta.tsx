@@ -24,7 +24,7 @@ const FirstCTA = () => {
           alt="cta-bg"
           width={1000}
           height={1000}
-          className="object-cover w-[1200px] h-[500px] lg:h-[400px] rounded-4xl"
+          className="object-cover w-[1200px] h-[500px] md:h-[300px] lg:h-[400px] rounded-4xl"
         />
 
         <div className="absolute top-10 lg:top-20 bottom-10 lg:bottom-20 right-10 lg:right-20 left-10 lg:left-20 grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-10">
