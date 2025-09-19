@@ -174,6 +174,7 @@ const Testimonial = () => {
             className={`rounded-full h-12 w-12 cursor-pointer ${
               scrollLeft ? '' : 'bg-gray-100'
             }`}
+            aria-label="left-button"
           >
             <ArrowLeft />
           </Button>
@@ -183,6 +184,7 @@ const Testimonial = () => {
             className={`rounded-full h-12 w-12 cursor-pointer ${
               scrollRight ? '' : 'bg-gray-100'
             }`}
+            aria-label="right-button"
           >
             <ArrowRight />
           </Button>

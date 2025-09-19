@@ -47,6 +47,7 @@ const Hero = () => {
             alt="hero-image"
             width={1000}
             height={1000}
+            priority
           />
         </motion.div>
       </div>

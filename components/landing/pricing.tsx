@@ -88,14 +88,14 @@ const Pricing = () => {
 
               <Separator className="my-8" />
 
-              <div className="space-y-4 text-sm">
+              <ul className="space-y-4 text-sm">
                 {card.features.map((feature) => (
-                  <div key={feature.id} className="flex items-center gap-2 ">
+                  <li key={feature.id} className="flex items-center gap-2 ">
                     <Check className="w-4 h-4" />
-                    <ul>{feature.item}</ul>
-                  </div>
+                    {feature.item}
+                  </li>
                 ))}
-              </div>
+              </ul>
             </div>
           ))}
         </div>

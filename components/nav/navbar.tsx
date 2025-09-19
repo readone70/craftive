@@ -37,7 +37,10 @@ export function Navbar() {
         </div>
 
         <div className="sm:hidden pr-6">
-          <Button onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <Button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="menu-button"
+          >
             {isMenuOpen ? (
               <X aria-hidden="true" />
             ) : (
