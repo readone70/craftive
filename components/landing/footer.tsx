@@ -28,7 +28,7 @@ const Footer = () => {
               ))}
             </div>
           </div>
-          <div className="flex flex-col sm:flex-row justify-between">
+          <div className="flex flex-col gap-4 sm:flex-row justify-between">
             <FooterLinks />
             <div className="text-sm flex flex-col sm:flex-row gap-4 text-footer-text">
               <Link href="/terms">Terms of use</Link>
