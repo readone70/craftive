@@ -11,64 +11,46 @@ const cards = [
     id: 1,
     rating: 5,
     content:
-      'Lorem ipsum dolor sit amet,consectetur adipiscing elit.Suspendisse varius enim in eroselementum tristique. Duis cursus, miquis viverraornare.',
+      'Craftive redesigned our website and the results were amazing. The site is cleaner, faster, and truly reflects our brand. We have already seen a boost in client inquiries.',
     clientImage: '/images/sarah.png',
-    clientName: 'Orlando Diggs',
-    clientTitle: 'MD, Klex Company',
+    clientName: 'Sarah Adams',
+    clientTitle: 'Mavrick Inc.',
   },
   {
     id: 2,
     rating: 4,
     content:
-      'Lorem ipsum dolor sit amet,consectetur adipiscing elit.Suspendisse varius enim in eroselementum tristique. Duis cursus, miquis viverraornare.',
+      'Working with this team was effortless. They understood our goals from the start and delivered a professional website that has impressed both our staff and customers.',
     clientImage: '/images/chen.png',
-    clientName: 'Orlando Diggs',
-    clientTitle: 'MD, Klex Company',
+    clientName: 'Chen Diggs',
+    clientTitle: 'Double Merit',
   },
   {
     id: 3,
     rating: 5,
     content:
-      'Lorem ipsum dolor sit amet,consectetur adipiscing elit.Suspendisse varius enim in eroselementum tristique. Duis cursus, miquis viverraornare.',
+      'From start to finish, communication was smooth and the process was stress-free. The final product exceeded expectations and gave our business a professional edge.',
     clientImage: '/images/emily.png',
-    clientName: 'Orlando Diggs',
-    clientTitle: 'MD, Klex Company',
+    clientName: 'Emily Cambel',
+    clientTitle: 'Kelc Group',
   },
   {
     id: 4,
     rating: 4,
     content:
-      'Lorem ipsum dolor sit amet,consectetur adipiscing elit.Suspendisse varius enim in eroselementum tristique. Duis cursus, miquis viverraornare.',
+      'The attention to detail and creativity they brought to our project was outstanding. Our new design feels fresh and modern, and our users love the experience',
     clientImage: '/images/sarah.png',
-    clientName: 'Orlando Diggs',
-    clientTitle: 'MD, Klex Company',
+    clientName: 'Sarah Adams',
+    clientTitle: 'Mavrick Inc.',
   },
   {
     id: 5,
     rating: 5,
     content:
-      'Lorem ipsum dolor sit amet,consectetur adipiscing elit.Suspendisse varius enim in eroselementum tristique. Duis cursus, miquis viverraornare.',
+      'They combined creativity with technical expertise to build a website that not only looks great but also performs flawlessly. We couldn’t be happier with the outcome.',
     clientImage: '/images/chen.png',
-    clientName: 'Orlando Diggs',
-    clientTitle: 'MD, Klex Company',
-  },
-  {
-    id: 6,
-    rating: 5,
-    content:
-      'Lorem ipsum dolor sit amet,consectetur adipiscing elit.Suspendisse varius enim in eroselementum tristique. Duis cursus, miquis viverraornare.',
-    clientImage: '/images/sarah.png',
-    clientName: 'Orlando Diggs',
-    clientTitle: 'MD, Klex Company',
-  },
-  {
-    id: 7,
-    rating: 4,
-    content:
-      'Lorem ipsum dolor sit amet,consectetur adipiscing elit.Suspendisse varius enim in eroselementum tristique. Duis cursus, miquis viverraornare.',
-    clientImage: '/images/emily.png',
-    clientName: 'Orlando Diggs',
-    clientTitle: 'MD, Klex Company',
+    clientName: 'Chen Diggs',
+    clientTitle: 'Double Merit',
   },
 ];
 

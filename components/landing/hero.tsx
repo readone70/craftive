@@ -41,13 +41,14 @@ const Hero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
+          className="relative h-[350px] sm:h-[450px]"
         >
           <Image
             src="/images/hero-image.webp"
             alt="hero-image"
-            width={1000}
-            height={1000}
+            fill
             priority
+            className="object-contain"
           />
         </motion.div>
       </div>

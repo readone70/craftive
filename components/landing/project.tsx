@@ -8,8 +8,8 @@ import { motion, useInView } from 'motion/react';
 import { useRef } from 'react';
 
 const cards = [
-  { id: 1, image: '/images/apple.webp', title: 'Apple iOS Experience' },
-  { id: 2, image: '/images/google.webp', title: 'Google Branding' },
+  { id: 1, image: '/images/apple-project.webp', title: 'Apple iOS Experience' },
+  { id: 2, image: '/images/google-project.webp', title: 'Google Branding' },
 ];
 
 const Project = () => {
@@ -41,13 +41,12 @@ const Project = () => {
               key={card.id}
               className="border border-gray-border rounded-3xl pb-8 bg-primary-background"
             >
-              <div className="">
+              <div className="relative h-60 sm:h-68 mb-8 rounded-3xl">
                 <Image
                   src={card.image}
                   alt="project-image"
-                  width={1000}
-                  height={1000}
-                  className="object-cover h-64 rounded-3xl mb-8"
+                  fill
+                  className="object-cover rounded-3xl mb-8"
                 />
               </div>
 

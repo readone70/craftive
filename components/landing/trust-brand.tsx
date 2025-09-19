@@ -62,6 +62,7 @@ const TrustBrand = () => {
                 alt={logo.alt}
                 width={80}
                 height={80}
+                sizes="120px"
               />
             </div>
           ))}
