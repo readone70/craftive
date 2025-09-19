@@ -14,7 +14,7 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 w-full backdrop-blur-sm">
-      <div className="sm:px-20 flex h-18 items-center justify-between">
+      <div className="max-w-[1200px] mx-auto sm:px-20 flex h-18 items-center justify-between">
         <div className="flex items-center space-x-2 pl-6 sm:pl-0">
           <Image
             src={

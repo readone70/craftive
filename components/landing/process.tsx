@@ -43,44 +43,53 @@ const Process = () => {
   const isInView = useInView(scrollSection);
 
   return (
-    <motion.div
-      ref={scrollSection}
-      initial={{ opacity: 0, y: 20 }}
-      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-      transition={{ duration: 0.8, ease: 'easeOut', delay: 0 }}
-      className="px-6 sm:px-20 flex flex-col gap-10"
-    >
-      <div className="flex justify-between">
-        <div>
-          <h2 className="font-medium font-heading text-4xl sm:text-5xl mb-4 tracking-tighter">
-            How we work<span className="text-primary">.</span>
-          </h2>
-          <p className="text-body-text">From concept to launch - and beyond</p>
-        </div>
-        <div>
-          <Image
-            src="/images/process-icon.svg"
-            alt="process-icon"
-            width={80}
-            height={80}
-          />
-        </div>
-      </div>
-      <div className="grid grid-cols-1 grids-rows-1 lg:grid-cols-3 lg:grid-rows-2 gap-6 ">
-        {cards.map((card) => (
-          <div
-            key={card.id}
-            className="border border-dashed bg-primary-background p-6 rounded-2xl space-y-3"
-          >
-            <Image src={card.icon} alt="process-icon" width={30} height={30} />
-            <h3 className="font-semibold text-lg font-heading tracking-tighter">
-              {card.title}
-            </h3>
-            <p className="text-sm text-body-text">{card.desc}</p>
+    <div className="w-full">
+      <motion.div
+        ref={scrollSection}
+        initial={{ opacity: 0, y: 20 }}
+        animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+        transition={{ duration: 0.8, ease: 'easeOut', delay: 0 }}
+        className="max-w-[1200px] mx-auto px-6 sm:px-20 flex flex-col gap-10"
+      >
+        <div className="flex justify-between">
+          <div>
+            <h2 className="font-medium font-heading text-4xl sm:text-5xl mb-4 tracking-tighter">
+              How we work<span className="text-primary">.</span>
+            </h2>
+            <p className="text-body-text">
+              From concept to launch - and beyond
+            </p>
           </div>
-        ))}
-      </div>
-    </motion.div>
+          <div>
+            <Image
+              src="/images/process-icon.svg"
+              alt="process-icon"
+              width={80}
+              height={80}
+            />
+          </div>
+        </div>
+        <div className="grid grid-cols-1 grids-rows-1 lg:grid-cols-3 lg:grid-rows-2 gap-6 ">
+          {cards.map((card) => (
+            <div
+              key={card.id}
+              className="border border-dashed bg-primary-background p-6 rounded-2xl space-y-3"
+            >
+              <Image
+                src={card.icon}
+                alt="process-icon"
+                width={30}
+                height={30}
+              />
+              <h3 className="font-semibold text-lg font-heading tracking-tighter">
+                {card.title}
+              </h3>
+              <p className="text-sm text-body-text">{card.desc}</p>
+            </div>
+          ))}
+        </div>
+      </motion.div>
+    </div>
   );
 };
 

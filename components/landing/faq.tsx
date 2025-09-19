@@ -42,40 +42,41 @@ const FAQ = () => {
   const isInView = useInView(scrollSection);
 
   return (
-    <motion.div
-      ref={scrollSection}
-      initial={{ opacity: 0, y: 20 }}
-      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-      transition={{ duration: 0.8, ease: 'easeOut', delay: 0 }}
-      className="grid grid-cols-1 lg:grid-cols-2 gap-10 px-6 sm:px-20"
-    >
-      <div>
-        <h2 className="font-medium font-heading text-4xl sm:text-5xl mb-4 tracking-tighter">
-          Got questions? We&apos;ve got answers
-          <span className="text-primary">.</span>
-        </h2>
-        <p className="text-body-text">
-          We are a team of creative designers and expert developers passionate
-          about crafting high-performing websites and digital experiences.
-          Whether you&apos;re a startup, a growing business, or an enterprise,
-          we provide tailored solutions that help you scale.
-        </p>
-      </div>
-      <div>
-        <Accordion type="single" collapsible>
-          {faqs.map((faq) => (
-            <AccordionItem key={faq.id} value={faq.question}>
-              <AccordionTrigger className="text-base cursor-pointer">
-                {faq.question}
-              </AccordionTrigger>
-              <AccordionContent className="text-base text-body-text">
-                {faq.answer}
-              </AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
-      </div>
-    </motion.div>
+    <div className="w-full">
+      <motion.div
+        ref={scrollSection}
+        initial={{ opacity: 0, y: 20 }}
+        animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+        transition={{ duration: 0.8, ease: 'easeOut', delay: 0 }}
+        className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 px-6 sm:px-20"
+      >
+        <div>
+          <h2 className="font-medium font-heading text-4xl sm:text-5xl mb-4 tracking-tighter">
+            Got questions? We&apos;ve got answers
+            <span className="text-primary">.</span>
+          </h2>
+          <p className="text-body-text">
+            We know choosing the right team for your digital project is a big
+            decision. Here are some common questions we get. Clear, honest, and
+            straight to the point.
+          </p>
+        </div>
+        <div>
+          <Accordion type="single" collapsible>
+            {faqs.map((faq) => (
+              <AccordionItem key={faq.id} value={faq.question}>
+                <AccordionTrigger className="text-base cursor-pointer">
+                  {faq.question}
+                </AccordionTrigger>
+                <AccordionContent className="text-base text-body-text">
+                  {faq.answer}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </div>
+      </motion.div>
+    </div>
   );
 };
 

@@ -53,52 +53,54 @@ const Pricing = () => {
   const isInView = useInView(scrollSection);
 
   return (
-    <motion.div
-      ref={scrollSection}
-      initial={{ opacity: 0, y: 20 }}
-      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-      transition={{ duration: 0.8, ease: 'easeOut', delay: 0 }}
-      className="px-6 sm:px-20 space-y-10"
-    >
-      <div className="flex flex-col items-center">
-        <h2 className="font-medium font-heading text-4xl text-center sm:text-5xl mb-4 tracking-tighter">
-          Simple, transparent pricing<span className="text-primary">.</span>
-        </h2>
-        <p className="text-center text-body-text w-full sm:w-[600px]">
-          Whether you&apos;re a startup looking for a fresh launch or an
-          enterprise needing a robust solution, we offer flexible pricing
-          options to match your goals and budget.
-        </p>
-      </div>
+    <div>
+      <motion.div
+        ref={scrollSection}
+        initial={{ opacity: 0, y: 20 }}
+        animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+        transition={{ duration: 0.8, ease: 'easeOut', delay: 0 }}
+        className="max-w-[1200px] mx-auto px-6 sm:px-20 space-y-10"
+      >
+        <div className="flex flex-col items-center">
+          <h2 className="font-medium font-heading text-4xl text-center sm:text-5xl mb-4 tracking-tighter">
+            Simple, transparent pricing<span className="text-primary">.</span>
+          </h2>
+          <p className="text-center text-body-text w-full sm:w-[600px]">
+            Whether you&apos;re a startup looking for a fresh launch or an
+            enterprise needing a robust solution, we offer flexible pricing
+            options to match your goals and budget.
+          </p>
+        </div>
 
-      <div className="flex flex-col lg:flex-row gap-6">
-        {cards.map((card) => (
-          <div
-            key={card.id}
-            className={`border border-dashed rounded-3xl p-8 w-full lg:w-1/3 ${card.cardBg}`}
-          >
-            <div className="space-y-6">
-              <p className="font-medium">{card.tag}</p>
-              <h3 className="text-5xl font-heading font-bold tracking-tighter">
-                {card.price}
-              </h3>
-              <p className="text-sm">{card.desc}</p>
+        <div className="flex flex-col lg:flex-row gap-6">
+          {cards.map((card) => (
+            <div
+              key={card.id}
+              className={`border border-gray-border rounded-3xl p-8 w-full lg:w-1/3 ${card.cardBg}`}
+            >
+              <div className="space-y-6">
+                <p className="font-medium">{card.tag}</p>
+                <h3 className="text-5xl font-heading font-bold tracking-tighter">
+                  {card.price}
+                </h3>
+                <p className="text-sm">{card.desc}</p>
+              </div>
+
+              <Separator className="my-8" />
+
+              <div className="space-y-4 text-sm">
+                {card.features.map((feature) => (
+                  <div key={feature.id} className="flex items-center gap-2 ">
+                    <Check className="w-4 h-4" />
+                    <ul>{feature.item}</ul>
+                  </div>
+                ))}
+              </div>
             </div>
-
-            <Separator className="my-8" />
-
-            <div className="space-y-4 text-sm">
-              {card.features.map((feature) => (
-                <div key={feature.id} className="flex items-center gap-2 ">
-                  <Check className="w-4 h-4" />
-                  <ul>{feature.item}</ul>
-                </div>
-              ))}
-            </div>
-          </div>
-        ))}
-      </div>
-    </motion.div>
+          ))}
+        </div>
+      </motion.div>
+    </div>
   );
 };
 

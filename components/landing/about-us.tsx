@@ -16,37 +16,39 @@ const About = () => {
   const isInView = useInView(scrollSection);
 
   return (
-    <motion.div
-      ref={scrollSection}
-      initial={{ opacity: 0, y: 20 }}
-      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-      transition={{ duration: 0.8, ease: 'easeOut', delay: 0 }}
-      className="px-6 sm:px-20 py-20 grid grid-cols-1 lg:grid-cols-2 gap-10 bg-primary-background"
-    >
-      <motion.div className="grid grid-cols-2 grid-rows-2 gap-10 sm:gap-20">
-        {stats.map((stat) => (
-          <div key={stat.id}>
-            <h2 className="font-semibold font-heading text-4xl sm:text-6xl tracking-tighter">
-              {stat.number}
-            </h2>
-            <p className="text-sm text-body-text w-full sm:w-36">
-              {stat.description}
-            </p>
-          </div>
-        ))}
+    <div className="w-full bg-primary-background">
+      <motion.div
+        ref={scrollSection}
+        initial={{ opacity: 0, y: 20 }}
+        animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+        transition={{ duration: 0.8, ease: 'easeOut', delay: 0 }}
+        className="max-w-[1200px] mx-auto px-6 sm:px-20 py-20 grid grid-cols-1 lg:grid-cols-2 gap-10 "
+      >
+        <div className="grid grid-cols-2 grid-rows-2 gap-10 sm:gap-20">
+          {stats.map((stat) => (
+            <div key={stat.id}>
+              <h2 className="font-semibold font-heading text-4xl sm:text-6xl tracking-tighter">
+                {stat.number}
+              </h2>
+              <p className="text-sm text-body-text w-full sm:w-36">
+                {stat.description}
+              </p>
+            </div>
+          ))}
+        </div>
+        <motion.div className="">
+          <h2 className="font-medium font-heading text-4xl sm:text-5xl mb-4 tracking-tighter">
+            Who we are<span className="text-primary">.</span>
+          </h2>
+          <p className="text-body-text">
+            We are a team of creative designers and expert developers passionate
+            about crafting high-performing websites and digital experiences.
+            Whether you&apos;re a startup, a growing business, or an enterprise,
+            we provide tailored solutions that help you scale.
+          </p>
+        </motion.div>
       </motion.div>
-      <motion.div className="">
-        <h2 className="font-medium font-heading text-4xl sm:text-5xl mb-4 tracking-tighter">
-          Who we are<span className="text-primary">.</span>
-        </h2>
-        <p className="text-body-text">
-          We are a team of creative designers and expert developers passionate
-          about crafting high-performing websites and digital experiences.
-          Whether you&apos;re a startup, a growing business, or an enterprise,
-          we provide tailored solutions that help you scale.
-        </p>
-      </motion.div>
-    </motion.div>
+    </div>
   );
 };
 

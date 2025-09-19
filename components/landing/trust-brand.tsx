@@ -41,31 +41,33 @@ const TrustBrand = () => {
   const { theme } = useTheme();
 
   return (
-    <motion.div
-      ref={scrollSection}
-      initial={{ opacity: 0, y: 20 }}
-      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-      transition={{ duration: 0.8, ease: 'easeOut', delay: 0 }}
-      className="px-6 sm:px-20"
-    >
-      <div>
-        <h2 className="text-center mb-8 tracking-tight">Trusted by</h2>
-      </div>
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-        {brandlogo.map((logo) => (
-          <div key={logo.id} className="flex justify-center items-center">
-            <Image
-              src={
-                (theme === 'dark' ? logo.logodark : logo.logolight) as string
-              }
-              alt={logo.alt}
-              width={80}
-              height={80}
-            />
-          </div>
-        ))}
-      </div>
-    </motion.div>
+    <div className="w-full">
+      <motion.div
+        ref={scrollSection}
+        initial={{ opacity: 0, y: 20 }}
+        animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+        transition={{ duration: 0.8, ease: 'easeOut', delay: 0 }}
+        className="max-w-[1200px] mx-auto px-6 sm:px-20"
+      >
+        <div>
+          <h2 className="text-center mb-8 tracking-tight">Trusted by</h2>
+        </div>
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+          {brandlogo.map((logo) => (
+            <div key={logo.id} className="flex justify-center items-center">
+              <Image
+                src={
+                  (theme === 'dark' ? logo.logodark : logo.logolight) as string
+                }
+                alt={logo.alt}
+                width={80}
+                height={80}
+              />
+            </div>
+          ))}
+        </div>
+      </motion.div>
+    </div>
   );
 };
 
