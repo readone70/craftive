@@ -1,31 +1,33 @@
-'use client';
+"use client";
 
-import React from 'react';
-import { Button } from '../ui/button';
-import Image from 'next/image';
-import { CircleCheck } from 'lucide-react';
-import { motion } from 'motion/react';
+import React from "react";
+import { Button } from "../ui/button";
+import Image from "next/image";
+import { CircleCheck } from "lucide-react";
+import { motion } from "motion/react";
 
 const scrolls = [
-  { id: 1, item: 'Reliable service' },
-  { id: 2, item: 'Designs that perform' },
-  { id: 3, item: 'Built for growth' },
-  { id: 4, item: 'Solutions, not just services' },
-  { id: 5, item: 'On-time delivery' },
-  { id: 6, item: 'Launch with confidence' },
+  { id: 1, item: "Reliable service" },
+  { id: 2, item: "Designs that perform" },
+  { id: 3, item: "Built for growth" },
+  { id: 4, item: "Solutions, not just services" },
+  { id: 5, item: "On-time delivery" },
+  { id: 6, item: "Launch with confidence" },
 ];
 
 const SecondCTA = () => {
   return (
     <div className="w-full">
-      <div className="max-w-[1200px] mx-auto px-6 sm:px-20">
-        <div className="bg-cta-background text-white rounded-4xl p-10 lg:p-16 overflow-hidden scroll-hide space-y-16">
+      <div className="mx-auto max-w-[1200px] px-6 sm:px-20">
+        <div className="bg-cta-background scroll-hide space-y-16 overflow-hidden rounded-4xl p-10 text-white lg:p-16">
           <div className="flex justify-between">
-            <div className="space-y-6 ">
-              <h2 className="font-bold font-heading text-4xl lg:text-5xl tracking-tighter w-full lg:w-88">
+            <div className="space-y-6">
+              <h2 className="font-heading text-4xl font-bold tracking-tighter lg:w-88 lg:text-5xl">
                 Start your journey with us now
               </h2>
-              <Button className="rounded-full h-12 px-10">Start now</Button>
+              <Button className="text-button-text-color h-12 cursor-pointer rounded-full px-8">
+                Start now
+              </Button>
             </div>
             <div>
               <Image
@@ -39,15 +41,15 @@ const SecondCTA = () => {
 
           <motion.div
             className="flex gap-4"
-            animate={{ x: ['0%', '-200%'] }}
-            transition={{ repeat: Infinity, duration: 30, ease: 'linear' }}
+            animate={{ x: ["0%", "-200%"] }}
+            transition={{ repeat: Infinity, duration: 30, ease: "linear" }}
           >
             {[...scrolls, ...scrolls].map((scroll, index) => (
               <div
                 key={index}
-                className="bg-scroll-background flex items-center gap-2 flex-shrink-0 px-6 py-3 rounded-full"
+                className="bg-scroll-background flex flex-shrink-0 items-center gap-2 rounded-full px-6 py-3"
               >
-                <CircleCheck className="w-5 h-5" />
+                <CircleCheck className="h-5 w-5" />
                 <p className="">{scroll.item}</p>
               </div>
             ))}

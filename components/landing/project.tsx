@@ -1,15 +1,15 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import React from 'react';
-import { Button } from '../ui/button';
-import { ArrowRight } from 'lucide-react';
-import { motion, useInView } from 'motion/react';
-import { useRef } from 'react';
+import Image from "next/image";
+import React from "react";
+import { Button } from "../ui/button";
+import { ArrowRight } from "lucide-react";
+import { motion, useInView } from "motion/react";
+import { useRef } from "react";
 
 const cards = [
-  { id: 1, image: '/images/apple-project.webp', title: 'Apple iOS Experience' },
-  { id: 2, image: '/images/google-project.webp', title: 'Google Branding' },
+  { id: 1, image: "/images/apple-project.webp", title: "Apple iOS Experience" },
+  { id: 2, image: "/images/google-project.webp", title: "Google Branding" },
 ];
 
 const Project = () => {
@@ -22,35 +22,35 @@ const Project = () => {
         ref={scrollSection}
         initial={{ opacity: 0, y: 20 }}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-        transition={{ duration: 0.8, ease: 'easeOut', delay: 0 }}
-        className="max-w-[1200px] mx-auto px-6 sm:px-20 flex flex-col gap-10"
+        transition={{ duration: 0.8, ease: "easeOut", delay: 0 }}
+        className="mx-auto flex max-w-[1200px] flex-col gap-10 px-6 sm:px-20"
       >
         <div className="flex flex-col items-center">
-          <h2 className="font-medium font-heading text-4xl text-center sm:text-5xl mb-4 tracking-tighter">
+          <h2 className="font-heading mb-4 text-center text-4xl font-medium tracking-tighter sm:text-5xl">
             Our work speaks volume<span className="text-primary">.</span>
           </h2>
-          <p className="text-center text-body-text w-full sm:w-[600px]">
+          <p className="text-body-text w-full text-center sm:w-[600px]">
             Take a look at some of our favorite projects - from sleek startups
             to enterprise solutions. Each one tells a story of collaboration,
             creativity, and craft.
           </p>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
           {cards.map((card) => (
             <div
               key={card.id}
-              className="border border-gray-border rounded-3xl pb-8 bg-primary-background"
+              className="border-gray-border bg-primary-background rounded-3xl border pb-8"
             >
-              <div className="relative h-60 sm:h-68 mb-8 rounded-3xl">
+              <div className="relative mb-8 h-60 rounded-3xl sm:h-68">
                 <Image
                   src={card.image}
                   alt="project-image"
                   fill
-                  className="object-cover rounded-3xl mb-8"
+                  className="mb-8 rounded-3xl object-cover"
                 />
               </div>
 
-              <h3 className="text-center font-heading font-medium text-xl tracking-tighter">
+              <h3 className="font-heading text-center text-xl font-medium tracking-tighter">
                 {card.title}
               </h3>
             </div>
@@ -58,7 +58,7 @@ const Project = () => {
         </div>
         <div className="flex justify-center">
           <Button
-            className="rounded-full h-12 w-52 px-24 cursor-pointer"
+            className="h-12 w-52 cursor-pointer rounded-full px-24"
             variant="outline"
           >
             Explore our portfolio

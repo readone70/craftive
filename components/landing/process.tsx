@@ -1,40 +1,40 @@
-'use client';
+"use client";
 
-import React from 'react';
-import Image from 'next/image';
-import { motion, useInView } from 'motion/react';
-import { useRef } from 'react';
+import React from "react";
+import Image from "next/image";
+import { motion, useInView } from "motion/react";
+import { useRef } from "react";
 
 const cards = [
   {
     id: 1,
-    icon: '/images/discovery-icon.svg',
-    title: 'Discovery',
-    desc: 'Understanding your vision, goals, and target audience to tailor our approach.',
+    icon: "/images/discovery-icon.svg",
+    title: "Discovery",
+    desc: "Understanding your vision, goals, and target audience to tailor our approach.",
   },
   {
     id: 2,
-    icon: '/images/design-icon.svg',
-    title: 'Design',
-    desc: 'Crafting intuitive and engaging designs that resonate with your audience.',
+    icon: "/images/design-icon.svg",
+    title: "Design",
+    desc: "Crafting intuitive and engaging designs that resonate with your audience.",
   },
   {
     id: 3,
-    icon: '/images/develop-icon.svg',
-    title: 'Development',
-    desc: 'Building robust and scalable solutions using the latest technologies.',
+    icon: "/images/develop-icon.svg",
+    title: "Development",
+    desc: "Building robust and scalable solutions using the latest technologies.",
   },
   {
     id: 4,
-    icon: '/images/deliver-icon.svg',
-    title: 'Deliver',
-    desc: 'Ensuring quality and performance through rigorous testing and feedback.',
+    icon: "/images/deliver-icon.svg",
+    title: "Deliver",
+    desc: "Ensuring quality and performance through rigorous testing and feedback.",
   },
   {
     id: 5,
-    icon: '/images/support-icon.svg',
-    title: 'Support',
-    desc: 'Deploying your product seamlessly and providing ongoing support.',
+    icon: "/images/support-icon.svg",
+    title: "Support",
+    desc: "Deploying your product seamlessly and providing ongoing support.",
   },
 ];
 
@@ -48,12 +48,12 @@ const Process = () => {
         ref={scrollSection}
         initial={{ opacity: 0, y: 20 }}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-        transition={{ duration: 0.8, ease: 'easeOut', delay: 0 }}
-        className="max-w-[1200px] mx-auto px-6 sm:px-20 flex flex-col gap-10"
+        transition={{ duration: 0.8, ease: "easeOut", delay: 0 }}
+        className="mx-auto flex max-w-[1200px] flex-col gap-10 px-6 sm:px-20"
       >
         <div className="flex justify-between">
           <div>
-            <h2 className="font-medium font-heading text-4xl sm:text-5xl mb-4 tracking-tighter">
+            <h2 className="font-heading mb-4 text-4xl font-medium tracking-tighter sm:text-5xl">
               How we work<span className="text-primary">.</span>
             </h2>
             <p className="text-body-text">
@@ -69,11 +69,11 @@ const Process = () => {
             />
           </div>
         </div>
-        <div className="grid grid-cols-1 grids-rows-1 lg:grid-cols-3 lg:grid-rows-2 gap-6 ">
+        <div className="grids-rows-1 grid grid-cols-1 gap-6 lg:grid-cols-3 lg:grid-rows-2">
           {cards.map((card) => (
             <div
               key={card.id}
-              className="border border-dashed bg-primary-background p-6 rounded-2xl space-y-3"
+              className="bg-primary-background space-y-3 rounded-2xl border border-dashed p-6"
             >
               <Image
                 src={card.icon}
@@ -81,10 +81,10 @@ const Process = () => {
                 width={30}
                 height={30}
               />
-              <h3 className="font-semibold text-lg font-heading tracking-tighter">
+              <h3 className="font-heading text-lg font-semibold tracking-tighter">
                 {card.title}
               </h3>
-              <p className="text-sm text-body-text">{card.desc}</p>
+              <p className="text-body-text text-sm">{card.desc}</p>
             </div>
           ))}
         </div>

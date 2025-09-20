@@ -1,22 +1,22 @@
-import type { Metadata } from 'next';
-import { Inter, Bricolage_Grotesque } from 'next/font/google';
-import './globals.css';
-import { ThemeProvider } from '../components/theme/theme-provider';
-import { Navbar } from '@/components/nav/navbar';
+import type { Metadata } from "next";
+import { Inter, Bricolage_Grotesque } from "next/font/google";
+import "./globals.css";
+import { ThemeProvider } from "../components/theme/theme-provider";
+import { Navbar } from "@/components/nav/navbar";
 
 const bricolage = Bricolage_Grotesque({
-  subsets: ['latin'],
-  variable: '--font-bricolage',
+  subsets: ["latin"],
+  variable: "--font-bricolage",
 });
 
 const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
+  subsets: ["latin"],
+  variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
-  title: 'Craftive',
-  description: 'Craftive Website',
+  title: "Craftive",
+  description: "Craftive Website",
 };
 
 export default function RootLayout({

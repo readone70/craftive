@@ -1,19 +1,19 @@
-'use client';
+"use client";
 
-import { motion } from 'motion/react';
-import { Button } from '../ui/button';
-import Image from 'next/image';
+import { motion } from "motion/react";
+import { Button } from "../ui/button";
+import Image from "next/image";
 
 const Hero = () => {
   return (
     <div className="w-full">
-      <div className="mx-auto max-w-[1200px] grid grids-cols-1 lg:grid-cols-2 px-5 sm:px-20 pt-10 gap-10">
+      <div className="grids-cols-1 mx-auto grid max-w-[1200px] gap-10 px-5 pt-8 sm:px-20 lg:grid-cols-2">
         <motion.div className="flex flex-col justify-center gap-4">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0 }}
-            className="font-bold font-heading text-4xl lg:text-7xl tracking-tighter"
+            className="font-heading text-4xl font-bold tracking-tighter lg:text-7xl"
           >
             Your vision, perfectly designed
           </motion.h1>
@@ -21,7 +21,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="tracking-tight w-full lg:w-96 text-body-text"
+            className="text-body-text w-full tracking-tight lg:w-96"
           >
             From mobile to web, we bring your ideas to life. Elevate your brand
             with cutting-edge design and seamless development.
@@ -31,7 +31,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <Button className="rounded-full h-12 px-6 bg-primary text-button-text-color cursor-pointer">
+            <Button className="bg-primary text-button-text-color h-12 cursor-pointer rounded-full px-6">
               Let&apos;s talk
             </Button>
           </motion.div>

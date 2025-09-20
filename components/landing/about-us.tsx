@@ -1,14 +1,14 @@
-'use client';
+"use client";
 
-import React from 'react';
-import { motion, useInView } from 'motion/react';
-import { useRef } from 'react';
+import React from "react";
+import { motion, useInView } from "motion/react";
+import { useRef } from "react";
 
 const stats = [
-  { id: 1, number: '150k+', description: 'Projects succesfully launched' },
-  { id: 2, number: '98%', description: 'Client satisfaction rate' },
-  { id: 3, number: '80+', description: 'Happy clients across 8 countries' },
-  { id: 4, number: '95%', description: 'Projects delivered within deadline' },
+  { id: 1, number: "150k+", description: "Projects succesfully launched" },
+  { id: 2, number: "98%", description: "Client satisfaction rate" },
+  { id: 3, number: "80+", description: "Happy clients across 8 countries" },
+  { id: 4, number: "95%", description: "Projects delivered within deadline" },
 ];
 
 const About = () => {
@@ -16,28 +16,28 @@ const About = () => {
   const isInView = useInView(scrollSection);
 
   return (
-    <div className="w-full bg-primary-background">
+    <div className="bg-primary-background w-full">
       <motion.div
         ref={scrollSection}
         initial={{ opacity: 0, y: 20 }}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-        transition={{ duration: 0.8, ease: 'easeOut', delay: 0 }}
-        className="max-w-[1200px] mx-auto px-6 sm:px-20 py-20 grid grid-cols-1 lg:grid-cols-2 gap-10 "
+        transition={{ duration: 0.8, ease: "easeOut", delay: 0 }}
+        className="mx-auto grid max-w-[1200px] grid-cols-1 gap-10 px-6 py-20 sm:px-20 lg:grid-cols-2"
       >
         <div className="grid grid-cols-2 grid-rows-2 gap-10 sm:gap-20">
           {stats.map((stat) => (
             <div key={stat.id}>
-              <h2 className="font-semibold font-heading text-4xl sm:text-6xl tracking-tighter">
+              <h2 className="font-heading text-4xl font-semibold tracking-tighter sm:text-6xl">
                 {stat.number}
               </h2>
-              <p className="text-sm text-body-text w-full sm:w-36">
+              <p className="text-body-text w-full text-sm sm:w-36">
                 {stat.description}
               </p>
             </div>
           ))}
         </div>
         <motion.div className="">
-          <h2 className="font-medium font-heading text-4xl sm:text-5xl mb-4 tracking-tighter">
+          <h2 className="font-heading mb-4 text-4xl font-medium tracking-tighter sm:text-5xl">
             Who we are<span className="text-primary">.</span>
           </h2>
           <p className="text-body-text">
