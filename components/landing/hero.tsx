@@ -6,9 +6,9 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="w-full">
+    <div className="w-full" id="home">
       <div className="grids-cols-1 mx-auto grid max-w-[1200px] gap-10 px-5 pt-8 sm:px-20 lg:grid-cols-2">
-        <motion.div className="flex flex-col justify-center gap-4">
+        <div className="flex flex-col justify-center gap-4">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -21,10 +21,10 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-body-text w-full tracking-tight lg:w-96"
+            className="text-body-text w-full lg:w-96"
           >
-            From mobile to web, we bring your ideas to life. Elevate your brand
-            with cutting-edge design and seamless development.
+            Beautiful, responsive websites that elevate your brand and drive
+            results.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -35,7 +35,7 @@ const Hero = () => {
               Let&apos;s talk
             </Button>
           </motion.div>
-        </motion.div>
+        </div>
 
         <motion.div
           initial={{ opacity: 0, y: 30 }}

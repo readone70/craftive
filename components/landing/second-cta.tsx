@@ -22,11 +22,11 @@ const SecondCTA = () => {
         <div className="bg-cta-background scroll-hide space-y-16 overflow-hidden rounded-4xl p-10 text-white lg:p-16">
           <div className="flex justify-between">
             <div className="space-y-6">
-              <h2 className="font-heading text-4xl font-bold tracking-tighter lg:w-88 lg:text-5xl">
-                Start your journey with us now
+              <h2 className="font-heading text-4xl font-bold tracking-tighter lg:w-110 lg:text-5xl">
+                Let&apos;s create something beautiful together
               </h2>
               <Button className="text-button-text-color h-12 cursor-pointer rounded-full px-8">
-                Start now
+                Get started today!
               </Button>
             </div>
             <div>

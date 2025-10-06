@@ -13,15 +13,15 @@ import { useRef } from "react";
 const faqs = [
   {
     id: 1,
-    question: "How long does a design project usually take?",
+    question: "How long does a project usually take?",
     answer:
       "Timelines depend on the scope and complexity of your project. We'll give you a clear project timeline after discussing your goals and deliverables.",
   },
   {
     id: 2,
-    question: "Will I be involved in the design process?",
+    question: "Will I be involved in the process?",
     answer:
-      "Yes, collaboration is a big part of our process. We work closely with you at every stage, from initial research to final delivery.",
+      "Yes, collaboration is a big part of our process. We work closely with you at every stage, from start to final delivery.",
   },
   {
     id: 3,
@@ -33,7 +33,13 @@ const faqs = [
     id: 4,
     question: "What happens after the project is completed?",
     answer:
-      "At the end of your project, you’ll receive all final deliverables — including editable source files, brand guidelines, or prototypes, depending on the scope. We also remain available for ongoing support,",
+      "You’ll receive all final deliverables at project completion. Ongoing support and maintenance are also available upon request.",
+  },
+  {
+    id: 5,
+    question: "How much does a website project cost?",
+    answer:
+      "Our pricing depends on the scope and complexity of your project, such as the number of pages, features, and integrations. We offer flexible packages starting from $500 and provide a custom quote after understanding your goals.",
   },
 ];
 
@@ -42,7 +48,7 @@ const FAQ = () => {
   const isInView = useInView(scrollSection);
 
   return (
-    <div className="w-full">
+    <div className="w-full" id="faq">
       <motion.div
         ref={scrollSection}
         initial={{ opacity: 0, y: 20 }}
@@ -56,9 +62,8 @@ const FAQ = () => {
             <span className="text-primary">.</span>
           </h2>
           <p className="text-body-text">
-            We know choosing the right team for your digital project is a big
-            decision. Here are some common questions we get. Clear, honest, and
-            straight to the point.
+            We know choosing the right team for your website project is a big
+            decision. Here are some common questions we get.
           </p>
         </div>
         <div>

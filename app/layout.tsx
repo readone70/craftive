@@ -15,8 +15,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Craftive",
-  description: "Craftive Website",
+  title: "Excelia Studio",
+  description: "Excelia Studio Website",
 };
 
 export default function RootLayout({

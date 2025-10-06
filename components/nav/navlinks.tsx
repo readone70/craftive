@@ -3,15 +3,28 @@
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 const navItems = [
   { label: "Home", href: "/" },
-  { label: "Projects", href: "/projects" },
-  { label: "Services", href: "/services" },
+  { label: "Works", href: "#works" },
+  { label: "Services", href: "#services" },
+  { label: "Testimonials", href: "#testimonials" },
+  { label: "FAQ", href: "#faq" },
 ];
-
 const NavLinks = () => {
   const pathname = usePathname();
+
+  const [active, setActive] = useState(pathname);
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      setActive(window.location.hash || pathname);
+    };
+
+    window.addEventListener("hashchange", handleHashChange);
+    return () => window.removeEventListener("hashchange", handleHashChange);
+  }, [pathname]);
 
   return (
     <div className="flex flex-col gap-4 text-sm sm:flex-row">
@@ -19,8 +32,9 @@ const NavLinks = () => {
         <Link
           href={href}
           key={label}
+          onClick={() => setActive(href)}
           className={
-            pathname === href ? "text-primary font-medium" : "text-foreground"
+            active === href ? "text-primary font-medium" : "text-foreground"
           }
         >
           {label}

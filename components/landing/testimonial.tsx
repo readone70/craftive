@@ -11,46 +11,46 @@ const cards = [
     id: 1,
     rating: 5,
     content:
-      "Craftive redesigned our website and the results were amazing. The site is cleaner, faster, and truly reflects our brand. We have already seen a boost in client inquiries.",
-    clientImage: "/images/sarah.png",
-    clientName: "Sarah Adams",
-    clientTitle: "Mavrick Inc.",
+      "They didn’t just design a website, they built a digital identity for our brand. The team understood our goals perfectly and delivered a site that feels alive and modern.",
+    clientImage: "/images/alim.jpeg",
+    clientName: "Alim Ajenifuja",
+    clientTitle: "Project Lead, Hearthub",
   },
   {
     id: 2,
-    rating: 4,
+    rating: 5,
     content:
-      "Working with this team was effortless. They understood our goals from the start and delivered a professional website that has impressed both our staff and customers.",
-    clientImage: "/images/chen.png",
-    clientName: "Chen Diggs",
-    clientTitle: "Double Merit",
+      "I needed a professional website to showcase my skills & career, and they delivered beyond my expectations. Now my brand looks credible and polished.",
+    clientImage: "/images/aremu.jpg",
+    clientName: "Aremu Anuolawapo",
+    clientTitle: "Computational Linguist",
   },
   {
     id: 3,
     rating: 5,
     content:
-      "From start to finish, communication was smooth and the process was stress-free. The final product exceeded expectations and gave our business a professional edge.",
-    clientImage: "/images/emily.png",
-    clientName: "Emily Cambel",
-    clientTitle: "Kelc Group",
+      "Excelia Studio completely transformed our online presence. Their attention to detail, creativity, and commitment to our success were evident in every step of the process.",
+    clientImage: "/images/hanif.jpeg",
+    clientName: "Hanif Eko",
+    clientTitle: "Founder, Phoenix Analytica",
   },
   {
     id: 4,
-    rating: 4,
+    rating: 5,
     content:
-      "The attention to detail and creativity they brought to our project was outstanding. Our new design feels fresh and modern, and our users love the experience",
-    clientImage: "/images/sarah.png",
-    clientName: "Sarah Adams",
-    clientTitle: "Mavrick Inc.",
+      "They brought Síkírá-bù to life online! Their exceptional web design skills and attention to detail exceeded our expectations. We're thrilled with the face of our brand online.",
+    clientImage: "/images/bode1.png",
+    clientName: "Bayo Olabode",
+    clientTitle: "CEO, Síkírá-bù",
   },
   {
     id: 5,
     rating: 5,
     content:
-      "They combined creativity with technical expertise to build a website that not only looks great but also performs flawlessly. We couldn’t be happier with the outcome.",
-    clientImage: "/images/chen.png",
-    clientName: "Chen Diggs",
-    clientTitle: "Double Merit",
+      "Working with Excelia has been exceptional because of their attention to detail and their deep understanding of user experience and how to develop a flow to solve problems.",
+    clientImage: "/images/sheriff.png",
+    clientName: "Sherif Akinola",
+    clientTitle: "Founder & CEO, Propatize",
   },
 ];
 
@@ -90,7 +90,7 @@ const Testimonial = () => {
   }, []);
 
   return (
-    <div className="w-full">
+    <div className="w-full" id="testimonials">
       <motion.div
         ref={scrollSection}
         initial={{ opacity: 0, y: 20 }}
@@ -100,7 +100,7 @@ const Testimonial = () => {
       >
         <div className="flex flex-col items-center">
           <h2 className="font-heading mb-4 text-center text-4xl font-medium tracking-tighter sm:text-5xl">
-            Clients testimonials<span className="text-primary">.</span>
+            Client testimonials<span className="text-primary">.</span>
           </h2>
           <p className="text-body-text w-full text-center sm:w-[600px]">
             Don&apos;t take our words for it. Hear from our clients.
@@ -110,7 +110,7 @@ const Testimonial = () => {
           {cards.map((card) => (
             <div
               key={card.id}
-              className="border-gray-border bg-primary-background w-96 flex-shrink-0 space-y-6 rounded-3xl border p-8"
+              className="border-gray-border w-96 flex-shrink-0 space-y-6 rounded-3xl border p-8"
             >
               <div className="flex">
                 {Array(5)
@@ -132,12 +132,12 @@ const Testimonial = () => {
               </div>
 
               <div className="flex items-center">
-                <div>
+                <div className="relative h-10 w-10 rounded-full">
                   <Image
                     src={card.clientImage}
                     alt="client-image"
-                    width={40}
-                    height={40}
+                    fill
+                    className="rounded-full object-cover"
                   />
                 </div>
 

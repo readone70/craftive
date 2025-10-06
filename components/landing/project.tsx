@@ -2,14 +2,58 @@
 
 import Image from "next/image";
 import React from "react";
-import { Button } from "../ui/button";
-import { ArrowRight } from "lucide-react";
 import { motion, useInView } from "motion/react";
 import { useRef } from "react";
 
 const cards = [
-  { id: 1, image: "/images/apple-project.webp", title: "Apple iOS Experience" },
-  { id: 2, image: "/images/google-project.webp", title: "Google Branding" },
+  {
+    id: 1,
+    image: "/images/h-main.webp",
+    title: "Hearthub",
+    url: "/projects",
+  },
+  {
+    id: 2,
+    image: "/images/p-main.webp",
+    title: "Propatize",
+    url: "/projects",
+  },
+  {
+    id: 3,
+    image: "/images/md-main.webp",
+    title: "Moniedrop",
+    url: "/projects",
+  },
+  {
+    id: 4,
+    image: "/images/a-main.webp",
+    title: "Aremu",
+    url: "/projects",
+  },
+  {
+    id: 5,
+    image: "/images/ph-main.webp",
+    title: "Phoenix Analytica",
+    url: "/projects",
+  },
+  {
+    id: 6,
+    image: "/images/mt-main.webp",
+    title: "Movein Turkiye",
+    url: "/projects",
+  },
+  {
+    id: 8,
+    image: "/images/s-mainn.webp",
+    title: "Sikirabu",
+    url: "/projects",
+  },
+  {
+    id: 7,
+    image: "/images/y-main.webp",
+    title: "Yalla Ride",
+    url: "/projects",
+  },
 ];
 
 const Project = () => {
@@ -17,7 +61,7 @@ const Project = () => {
   const isInView = useInView(scrollSection);
 
   return (
-    <div className="w-full">
+    <div className="w-full" id="works">
       <motion.div
         ref={scrollSection}
         initial={{ opacity: 0, y: 20 }}
@@ -30,20 +74,19 @@ const Project = () => {
             Our work speaks volume<span className="text-primary">.</span>
           </h2>
           <p className="text-body-text w-full text-center sm:w-[600px]">
-            Take a look at some of our favorite projects - from sleek startups
-            to enterprise solutions. Each one tells a story of collaboration,
-            creativity, and craft.
+            Take a look at some of our favorite projects, from business to
+            portfolio websites.
           </p>
         </div>
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-          {cards.map((card) => (
+          {cards.map(({ title, image }) => (
             <div
-              key={card.id}
+              key={title}
               className="border-gray-border bg-primary-background rounded-3xl border pb-8"
             >
               <div className="relative mb-8 h-60 rounded-3xl sm:h-68">
                 <Image
-                  src={card.image}
+                  src={image}
                   alt="project-image"
                   fill
                   className="mb-8 rounded-3xl object-cover"
@@ -51,19 +94,10 @@ const Project = () => {
               </div>
 
               <h3 className="font-heading text-center text-xl font-medium tracking-tighter">
-                {card.title}
+                {title}
               </h3>
             </div>
           ))}
-        </div>
-        <div className="flex justify-center">
-          <Button
-            className="h-12 w-52 cursor-pointer rounded-full px-24"
-            variant="outline"
-          >
-            Explore our portfolio
-            <ArrowRight />
-          </Button>
         </div>
       </motion.div>
     </div>
