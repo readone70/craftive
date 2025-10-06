@@ -3,6 +3,7 @@
 import { motion } from "motion/react";
 import { Button } from "../ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -31,9 +32,15 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <Button className="bg-primary text-button-text-color h-12 cursor-pointer rounded-full px-6">
-              Let&apos;s talk
-            </Button>
+            <Link
+              href="http://wa.link/kyi5yp"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button className="bg-primary text-button-text-color h-12 cursor-pointer rounded-full px-6">
+                Let&apos;s talk
+              </Button>
+            </Link>
           </motion.div>
         </div>
 

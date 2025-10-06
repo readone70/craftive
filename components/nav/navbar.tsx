@@ -36,9 +36,16 @@ export function Navbar() {
         </div>
 
         <div className="flex items-center gap-3">
-          <Button className="text-button-text-color hidden h-9 rounded-full text-xs sm:block">
-            Let&apos;s chat
-          </Button>
+          <Link
+            href="http://wa.link/kyi5yp"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button className="text-button-text-color hidden h-9 cursor-pointer rounded-full text-xs sm:block">
+              Let&apos;s chat
+            </Button>
+          </Link>
+
           <ThemeToggle />
         </div>
 

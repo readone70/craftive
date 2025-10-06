@@ -5,6 +5,7 @@ import { Button } from "../ui/button";
 import Image from "next/image";
 import { CircleCheck } from "lucide-react";
 import { motion } from "motion/react";
+import Link from "next/link";
 
 const scrolls = [
   { id: 1, item: "Reliable service" },
@@ -25,9 +26,15 @@ const SecondCTA = () => {
               <h2 className="font-heading text-4xl font-bold tracking-tighter lg:w-110 lg:text-5xl">
                 Let&apos;s create something beautiful together
               </h2>
-              <Button className="text-button-text-color h-12 cursor-pointer rounded-full px-8">
-                Get started today!
-              </Button>
+              <Link
+                href="http://wa.link/kyi5yp"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button className="text-button-text-color h-12 cursor-pointer rounded-full px-8">
+                  Get started today
+                </Button>
+              </Link>
             </div>
             <div>
               <Image
