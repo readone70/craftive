@@ -103,7 +103,7 @@ const Testimonial = () => {
             Client testimonials<span className="text-primary">.</span>
           </h2>
           <p className="text-body-text w-full text-center sm:w-[600px]">
-            Don&apos;t take our words for it. Hear from our clients.
+            Hear from our happy clients.
           </p>
         </div>
         <div className="scroll-hide flex gap-7 overflow-auto" ref={scrollCard}>
