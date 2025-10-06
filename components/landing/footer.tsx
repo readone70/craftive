@@ -15,7 +15,7 @@ const Footer = () => {
         </div>
         <div className="border-footer-border border-t pt-10">
           <p className="text-footer-text text-center text-xs">
-            © 2025 Craftive - All Rights Reserved
+            © 2025 Excelia Studio - All Rights Reserved
           </p>
         </div>
       </div>
