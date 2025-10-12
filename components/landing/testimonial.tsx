@@ -12,18 +12,18 @@ const cards = [
     rating: 5,
     content:
       "They didn’t just design a website, they built a digital identity for our brand. The team understood our goals perfectly and delivered a site that feels alive and modern.",
-    clientImage: "/images/alim.jpeg",
-    clientName: "Alim Ajenifuja",
-    clientTitle: "Project Lead, Hearthub",
+    clientImage: "/images/mrs-bomb.jpg",
+    clientName: "Bushroh Bombabta",
+    clientTitle: "Founder, Hearthub",
   },
   {
     id: 2,
     rating: 5,
     content:
-      "I needed a professional website to showcase my skills & career, and they delivered beyond my expectations. Now my brand looks credible and polished.",
+      "I needed a professional website to showcase my value and experience, and they delivered beyond my expectations. Now my brand looks credible.",
     clientImage: "/images/aremu.jpg",
     clientName: "Aremu Anuolawapo",
-    clientTitle: "Computational Linguist",
+    clientTitle: "Linguist Consultant",
   },
   {
     id: 3,
@@ -35,19 +35,10 @@ const cards = [
     clientTitle: "Founder, Phoenix Analytica",
   },
   {
-    id: 4,
-    rating: 5,
-    content:
-      "They brought Síkírá-bù to life online! Their exceptional web design skills and attention to detail exceeded our expectations. We're thrilled with the face of our brand online.",
-    clientImage: "/images/bode1.png",
-    clientName: "Bayo Olabode",
-    clientTitle: "CEO, Síkírá-bù",
-  },
-  {
     id: 5,
     rating: 5,
     content:
-      "Working with Excelia has been exceptional because of their attention to detail and their deep understanding of user experience and how to develop a flow to solve problems.",
+      "Working with Excelia has been exceptional. Their attention to detail and understanding of business goals make them outstanding problem-solvers.",
     clientImage: "/images/sheriff.png",
     clientName: "Sherif Akinola",
     clientTitle: "Founder & CEO, Propatize",
@@ -90,7 +81,7 @@ const Testimonial = () => {
   }, []);
 
   return (
-    <div className="w-full" id="testimonials">
+    <div className="w-full" id="clients">
       <motion.div
         ref={scrollSection}
         initial={{ opacity: 0, y: 20 }}

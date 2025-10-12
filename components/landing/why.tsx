@@ -9,36 +9,30 @@ const cards = [
   {
     id: 1,
 
-    icon: "/images/develop-icon.svg",
-    title: "Strategy & Design",
-    desc: "A blend of user experience and conversion-focused design.",
+    icon: "/images/discovery-icon.svg",
+    title: "Specialized Expertise",
+    desc: "We work with coaches and consultants. We understand your business model and what converts.",
   },
   {
     id: 2,
-    icon: "/images/design-icon.svg",
-    title: "Brand Consistency",
-    desc: "Visuals and messaging that align with your business identity.",
+    icon: "/images/discovery-icon.svg",
+    title: "Clear Communication",
+    desc: "We make collaboration easy with transparent updates and no tech overwhelm.",
   },
   {
     id: 3,
-    icon: "/images/develop-icon.svg",
-    title: "Seamless Performance",
-    desc: "Fast, responsive, and optimized across devices.",
-  },
-  {
-    id: 4,
-    icon: "/images/deliver-icon.svg",
-    title: "Simple Management",
-    desc: "Easy to update and maintain without tech stress.",
+    icon: "/images/discovery-icon.svg",
+    title: "Reliable Partnership",
+    desc: "From first draft to launch (and beyond), we’re here to make sure your website performs beautifully.",
   },
 ];
 
-const Services = () => {
+const Why = () => {
   const scrollSection = useRef(null);
   const isInView = useInView(scrollSection);
 
   return (
-    <div className="w-full">
+    <div className="w-full" id="why">
       <motion.div
         ref={scrollSection}
         initial={{ opacity: 0, y: 20 }}
@@ -49,23 +43,15 @@ const Services = () => {
         <div className="flex justify-between">
           <div>
             <h2 className="font-heading mb-4 text-4xl font-medium tracking-tighter sm:text-5xl">
-              What You Get<span className="text-primary">.</span>
+              Why Excelia<span className="text-primary">.</span>
             </h2>
             <p className="text-body-text">
-              Everything you need for a website that looks beautiful, performs
-              flawlessly, and converts.
+              Every site we create is built with strategy, credibility, and
+              performance in mind.
             </p>
           </div>
-          <div>
-            <Image
-              src="/images/process-icon.svg"
-              alt="process-icon"
-              width={80}
-              height={80}
-            />
-          </div>
         </div>
-        <div className="grid grid-cols-1 gap-6 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
           {cards.map((card) => (
             <div
               key={card.id}
@@ -89,4 +75,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Why;

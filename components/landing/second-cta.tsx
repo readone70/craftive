@@ -32,7 +32,7 @@ const SecondCTA = () => {
                 rel="noopener noreferrer"
               >
                 <Button className="text-button-text-color h-12 cursor-pointer rounded-full px-8">
-                  Get started today
+                  Get started
                 </Button>
               </Link>
             </div>

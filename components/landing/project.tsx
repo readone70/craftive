@@ -10,49 +10,22 @@ const cards = [
     id: 1,
     image: "/images/h-main.webp",
     title: "Hearthub",
-    url: "/projects",
-  },
-  {
-    id: 2,
-    image: "/images/p-main.webp",
-    title: "Propatize",
-    url: "/projects",
-  },
-  {
-    id: 3,
-    image: "/images/md-main.webp",
-    title: "Moniedrop",
-    url: "/projects",
   },
   {
     id: 4,
-    image: "/images/a-main.webp",
-    title: "Aremu",
-    url: "/projects",
-  },
-  {
-    id: 5,
     image: "/images/ph-main.webp",
     title: "Phoenix Analytica",
-    url: "/projects",
+  },
+
+  {
+    id: 3,
+    image: "/images/a-main.webp",
+    title: "Linguist Consultant",
   },
   {
-    id: 6,
-    image: "/images/mt-main.webp",
-    title: "Movein Turkiye",
-    url: "/projects",
-  },
-  {
-    id: 8,
-    image: "/images/s-mainn.webp",
-    title: "Sikirabu",
-    url: "/projects",
-  },
-  {
-    id: 7,
-    image: "/images/y-main.webp",
-    title: "Yalla Ride",
-    url: "/projects",
+    id: 2,
+    image: "/images/e-main.png",
+    title: "ElevateCo",
   },
 ];
 
@@ -71,31 +44,32 @@ const Project = () => {
       >
         <div className="flex flex-col items-center">
           <h2 className="font-heading mb-4 text-center text-4xl font-medium tracking-tighter sm:text-5xl">
-            Our work speaks volume<span className="text-primary">.</span>
+            Recent Projects<span className="text-primary">.</span>
           </h2>
           <p className="text-body-text w-full text-center sm:w-[600px]">
-            Take a look at some of our favorite projects, from business to
-            portfolio websites.
+            Take a look at some of our favorite projects.
           </p>
         </div>
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-          {cards.map(({ title, image }) => (
+          {cards.map((card) => (
             <div
-              key={title}
-              className="border-gray-border bg-primary-background rounded-3xl border pb-8"
+              key={card.id}
+              className="border-gray-border bg-primary-background rounded-3xl border"
             >
-              <div className="relative mb-8 h-60 rounded-3xl sm:h-68">
+              <div className="relative h-60 rounded-3xl sm:h-68">
                 <Image
-                  src={image}
+                  src={card.image}
                   alt="project-image"
                   fill
-                  className="mb-8 rounded-3xl object-cover"
+                  className="rounded-3xl object-cover"
                 />
               </div>
 
-              <h3 className="font-heading text-center text-xl font-medium tracking-tighter">
-                {title}
-              </h3>
+              <div className="flex flex-col items-center px-10 py-8">
+                <h3 className="font-heading text-center text-xl font-medium tracking-tighter">
+                  {card.title}
+                </h3>
+              </div>
             </div>
           ))}
         </div>
