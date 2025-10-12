@@ -19,7 +19,7 @@ const cards = [
 
   {
     id: 3,
-    image: "/images/a-main.webp",
+    image: "/images/are-main.png",
     title: "Linguist Consultant",
   },
   {
