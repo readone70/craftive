@@ -24,7 +24,7 @@ const cards = [
   },
   {
     id: 2,
-    image: "/images/e-main.png",
+    image: "/images/elevate.png",
     title: "ElevateCo",
   },
 ];
