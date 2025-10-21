@@ -12,7 +12,7 @@ const cards = [
     title: "Hearthub",
   },
   {
-    id: 4,
+    id: 2,
     image: "/images/ph-main.webp",
     title: "Phoenix Analytica",
   },
@@ -23,7 +23,7 @@ const cards = [
     title: "Linguist Consultant",
   },
   {
-    id: 2,
+    id: 4,
     image: "/images/elevate.png",
     title: "ElevateCo",
   },

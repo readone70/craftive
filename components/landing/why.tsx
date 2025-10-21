@@ -11,7 +11,7 @@ const cards = [
 
     icon: "/images/discovery-icon.svg",
     title: "Specialized Expertise",
-    desc: "We work with coaches and consultants. We understand your business model and what converts.",
+    desc: "We work with businesses and professionals. We understand your business model and what converts.",
   },
   {
     id: 2,
