@@ -56,9 +56,9 @@ const Process = () => {
               key={card.id}
               className={`border-gray-border w-full rounded-3xl border p-8 lg:w-1/3 ${card.cardBg}`}
             >
-              <div className="space-y-6">
+              <div className="space-y-3">
                 <p className="text-primary font-medium">{card.tag}</p>
-                <h3 className="font-heading text-2xl font-bold tracking-tighter">
+                <h3 className="font-heading text-xl font-semibold tracking-tighter">
                   {card.price}
                 </h3>
                 <p className="text-sm">{card.desc}</p>

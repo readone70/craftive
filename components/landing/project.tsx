@@ -8,24 +8,45 @@ import { useRef } from "react";
 const cards = [
   {
     id: 1,
-    image: "/images/h-main.webp",
+    image: "/images/heartn.webp",
     title: "Hearthub",
   },
   {
     id: 2,
-    image: "/images/ph-main.webp",
+    image: "/images/phoenix-new.webp",
     title: "Phoenix Analytica",
   },
 
   {
     id: 3,
-    image: "/images/are-main.png",
-    title: "Linguist Consultant",
+    image: "/images/aremu.webp",
+    title: "Aremu - Computational Linguist",
   },
+
   {
     id: 4,
-    image: "/images/elevate.png",
-    title: "ElevateCo",
+    image: "/images/moniedrop.webp",
+    title: "Moniedrop",
+  },
+  {
+    id: 5,
+    image: "/images/propatize.webp",
+    title: "Propatize",
+  },
+  {
+    id: 6,
+    image: "/images/sikirabu.webp",
+    title: "Sikirabu",
+  },
+  {
+    id: 7,
+    image: "/images/medieval.webp",
+    title: "Medieval",
+  },
+  {
+    id: 8,
+    image: "/images/moveinturkiye.webp",
+    title: "Movein Turkiye",
   },
 ];
 
