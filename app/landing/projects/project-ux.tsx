@@ -8,49 +8,29 @@ import { useRef } from "react";
 const cards = [
   {
     id: 1,
-    image: "/images/heartn.webp",
-    title: "Hearthub",
+    image: "/images/propatize-mb.webp",
+    title: "Propatize - Resident App",
   },
   {
     id: 2,
-    image: "/images/phoenix-new.webp",
-    title: "Phoenix Analytica",
+    image: "/images/propatize-mk.webp",
+    title: "Propatize - Manager App",
   },
 
   {
     id: 3,
-    image: "/images/aremu.webp",
-    title: "Aremu - Computational Linguist",
+    image: "/images/yalla-mk.webp",
+    title: "Yalla Savings App",
   },
 
   {
     id: 4,
-    image: "/images/moniedrop.webp",
-    title: "Moniedrop",
-  },
-  {
-    id: 5,
-    image: "/images/propatize.webp",
-    title: "Propatize",
-  },
-  {
-    id: 6,
-    image: "/images/sikirabu.webp",
-    title: "Sikirabu",
-  },
-  {
-    id: 7,
-    image: "/images/medieval.webp",
-    title: "Medieval",
-  },
-  {
-    id: 8,
-    image: "/images/moveinturkiye.webp",
-    title: "Movein Turkiye",
+    image: "/images/moniedrop-mk.webp",
+    title: "Moniedrop App",
   },
 ];
 
-const Project = () => {
+const ProjectUX = () => {
   const scrollSection = useRef(null);
   const isInView = useInView(scrollSection);
 
@@ -65,10 +45,10 @@ const Project = () => {
       >
         <div className="flex flex-col items-center">
           <h2 className="font-heading mb-4 text-center text-4xl font-medium tracking-tighter sm:text-5xl">
-            Recent Projects<span className="text-primary">.</span>
+            Works<span className="text-primary">.</span>
           </h2>
           <p className="text-body-text w-full text-center sm:w-[600px]">
-            Take a look at some of our favorite projects.
+            Take a look at some of our favorite works.
           </p>
         </div>
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
@@ -99,4 +79,4 @@ const Project = () => {
   );
 };
 
-export default Project;
+export default ProjectUX;

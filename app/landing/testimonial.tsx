@@ -3,7 +3,7 @@
 import { ArrowRight, Star, ArrowLeft } from "lucide-react";
 import Image from "next/image";
 import { useRef, useState, useEffect } from "react";
-import { Button } from "../ui/button";
+import { Button } from "../../components/ui/button";
 import { motion, useInView } from "motion/react";
 
 const cards = [
@@ -20,28 +20,28 @@ const cards = [
     id: 2,
     rating: 5,
     content:
-      "I needed a professional website to showcase my value and experience, and they delivered beyond my expectations. Now my brand looks credible.",
-    clientImage: "/images/aremu.jpg",
-    clientName: "Aremu Anuolawapo",
-    clientTitle: "Linguist Consultant",
-  },
-  {
-    id: 3,
-    rating: 5,
-    content:
       "Excelia Studio completely transformed our online presence. Their attention to detail, creativity, and commitment to our success were evident in every step of the process.",
     clientImage: "/images/hanif.jpeg",
     clientName: "Hanif Eko",
     clientTitle: "Founder, Phoenix Analytica",
   },
   {
-    id: 5,
+    id: 3,
     rating: 5,
     content:
-      "Working with Excelia has been exceptional. Their attention to detail and understanding of business goals make them outstanding problem-solvers.",
+      "Working with Excelia has been exceptional. Their attention to detail and understanding of user experience and business goals make them outstanding problem-solvers.",
     clientImage: "/images/sheriff.png",
     clientName: "Sherif Akinola",
     clientTitle: "Founder & CEO, Propatize",
+  },
+  {
+    id: 4,
+    rating: 5,
+    content:
+      "I needed a professional website to showcase my value and experience, and they delivered beyond my expectations. Now my brand looks credible.",
+    clientImage: "/images/aremu.jpg",
+    clientName: "Aremu Anuolawapo",
+    clientTitle: "Computational Linguistok,",
   },
 ];
 

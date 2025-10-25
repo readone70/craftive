@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import React from "react";
-import { Button } from "../ui/button";
+import { Button } from "../../components/ui/button";
 import { useInView, motion } from "motion/react";
 import { useRef } from "react";
 

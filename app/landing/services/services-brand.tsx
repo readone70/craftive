@@ -9,30 +9,36 @@ const cards = [
   {
     id: 1,
 
-    icon: "/images/discovery-icon.svg",
-    title: "Specialized Expertise",
-    desc: "We work with businesses and professionals. We understand your business model and what converts.",
+    icon: "/images/design-icon.svg",
+    title: "Brand Strategy & Discovery",
+    desc: "We uncover your purpose, voice, & audience to shape a brand that connects.",
   },
   {
     id: 2,
-    icon: "/images/discovery-icon.svg",
-    title: "Clear Communication",
-    desc: "We make collaboration easy with transparent updates and no tech overwhelm.",
+    icon: "/images/design-icon.svg",
+    title: "Visual Identity Design",
+    desc: "From logos to design system, every detail reflects your essence.",
   },
   {
     id: 3,
-    icon: "/images/discovery-icon.svg",
-    title: "Reliable Partnership",
-    desc: "From first draft to launch (and beyond), we’re here to make sure your website performs beautifully.",
+    icon: "/images/design-icon.svg",
+    title: "Brand Guidelines",
+    desc: "A clear, flexible system that keeps your brand consistent across board.",
+  },
+  {
+    id: 4,
+    icon: "/images/design-icon.svg",
+    title: "Assets That Work Everywhere",
+    desc: "Ready-to-use files and mockups for web, print, and social.",
   },
 ];
 
-const Why = () => {
+const ServicesBrand = () => {
   const scrollSection = useRef(null);
   const isInView = useInView(scrollSection);
 
   return (
-    <div className="w-full" id="why">
+    <div className="w-full">
       <motion.div
         ref={scrollSection}
         initial={{ opacity: 0, y: 20 }}
@@ -43,15 +49,23 @@ const Why = () => {
         <div className="flex justify-between">
           <div>
             <h2 className="font-heading mb-4 text-4xl font-medium tracking-tighter sm:text-5xl">
-              Why Excelia<span className="text-primary">.</span>
+              What You Get<span className="text-primary">.</span>
             </h2>
             <p className="text-body-text">
-              Every site we create is built with strategy, credibility, and
-              performance in mind.
+              Everything you need for a brand that&apos;s memorable, consistent,
+              and built to stand out.
             </p>
           </div>
+          <div>
+            <Image
+              src="/images/process-icon.svg"
+              alt="process-icon"
+              width={73}
+              height={73}
+            />
+          </div>
         </div>
-        <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 lg:grid-cols-4">
           {cards.map((card) => (
             <div
               key={card.id}
@@ -75,4 +89,4 @@ const Why = () => {
   );
 };
 
-export default Why;
+export default ServicesBrand;

@@ -37,7 +37,7 @@ const faqs = [
   },
   {
     id: 5,
-    question: "How much does a website project cost?",
+    question: "How much does a project cost?",
     answer:
       "Our pricing depends on the scope and complexity of your project, such as the number of pages, features, and integrations. We offer flexible packages starting from $500 and provide a custom quote after understanding your goals.",
   },

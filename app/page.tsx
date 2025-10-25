@@ -1,20 +1,20 @@
 import React from "react";
-import Hero from "../components/landing/hero";
-import Project from "@/components/landing/project";
-import Testimonial from "@/components/landing/testimonial";
-import SecondCTA from "@/components/landing/second-cta";
-import FAQ from "@/components/landing/faq";
-import Footer from "@/components/landing/footer";
-import Why from "@/components/landing/why";
-import Process from "@/components/landing/process";
-import Services from "@/components/landing/services";
+import Hero from "./landing/hero";
+import Testimonial from "@/app/landing/testimonial";
+import SecondCTA from "@/app/landing/second-cta";
+import FAQ from "@/app/landing/faq";
+import Footer from "@/app/landing/footer";
+import Why from "@/app/landing/why";
+import Process from "@/app/landing/process";
+import Services from "@/app/landing/services/services";
+import Projects from "./landing/projects/projects";
 
 const Home = () => {
   return (
     <div className="space-y-20">
       <Hero />
       <Services />
-      <Project />
+      <Projects />
       <Testimonial />
       <Why />
       <Process />

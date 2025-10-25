@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
-import { Button } from "../ui/button";
+import { Button } from "../../components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -16,7 +16,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0 }}
             className="font-heading text-4xl font-bold tracking-tighter lg:w-100 lg:text-7xl"
           >
-            Websites that win you clients
+            Your vision, designed to perform.
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 30 }}
@@ -24,9 +24,8 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-body-text w-full lg:w-96"
           >
-            Beautiful design meets real results. We create professional websites
-            that build credibility, attract ideal clients, and drive business
-            growth.
+            We transform your ideas into high-performing digital experiences,
+            from brands to products to websites.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
