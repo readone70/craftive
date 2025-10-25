@@ -12,13 +12,13 @@ const Projects = () => {
         <div className="mb-4 flex justify-center">
           <TabsList className="bg-pricing-card flex h-11 justify-center rounded-full">
             <TabsTrigger value="web" className="cursor-pointer rounded-full">
-              Website Design
+              Website
             </TabsTrigger>
             <TabsTrigger value="ux" className="cursor-pointer rounded-full">
-              UI/UX Design
+              UI/UX
             </TabsTrigger>
             <TabsTrigger value="brand" className="cursor-pointer rounded-full">
-              Brand Design
+              Brand
             </TabsTrigger>
           </TabsList>
         </div>
