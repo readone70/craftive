@@ -4,39 +4,56 @@ import Image from "next/image";
 import React from "react";
 import { motion, useInView } from "motion/react";
 import { useRef } from "react";
+import { CldVideoPlayer } from "next-cloudinary";
+import "next-cloudinary/dist/cld-video-player.css";
+import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { Eye } from "lucide-react";
 
 const cards = [
   {
     id: 1,
-    image: "/images/heart-mk.png",
-    title: "Hearthub",
+    image: "/images/prop-new-mkp.webp",
+    title: "Propatize",
+    desc: "A serene, modern website for Hearthub Solutions, a counseling practice helping people heal and grow.",
+    video: "propatize_hawvmi",
   },
   {
     id: 2,
-    image: "/images/phoenix-new.webp",
-    title: "Phoenix Analytica",
+    image: "/images/medieval-portfolio.webp",
+    title: "Medeival Portfolio",
+    desc: "A serene, modern website for Hearthub Solutions, a counseling practice helping people heal and grow.",
+    video: "medieval_ymytc6",
   },
-
   {
     id: 3,
-    image: "/images/aremu.webp",
-    title: "Aremu - Computational Linguist",
+    image: "/images/hearthub-new-mkp.webp",
+    title: "Hearthub Solutions",
+    desc: "A serene, modern website for Hearthub Solutions, a counseling brand helping people heal and grow.",
+    video: "hearthub-solutions_wnqjem",
+  },
+  {
+    id: 4,
+    image: "/images/phoenix-new-mkp.webp",
+    title: "Phoenix Analytica",
+    desc: "A serene, modern website for Hearthub Solutions, a counseling practice helping people heal and grow.",
+    video: "phoenix_epgbvw",
   },
 
   {
-    id: 4,
-    image: "/images/moniedrop.webp",
-    title: "Moniedrop",
-  },
-  {
     id: 5,
-    image: "/images/propatize.webp",
-    title: "Propatize",
+    image: "/images/aremu-mkp.webp",
+    title: "Aremu - Computational Linguist",
+    desc: "A serene, modern website for Hearthub Solutions, a counseling practice helping people heal and grow.",
+    video: "aremu_ff6cbz",
   },
+
   {
     id: 6,
-    image: "/images/sikirabu.webp",
-    title: "Sikirabu",
+    image: "/images/monie-mkp.webp",
+    title: "Moniedrop",
+    desc: "A serene, modern website for Hearthub Solutions, a counseling practice helping people heal and grow.",
+    video: "moniedrop_tztyku",
   },
 ];
 
@@ -76,10 +93,33 @@ const ProjectWeb = () => {
                 />
               </div>
 
-              <div className="flex flex-col items-center px-10 py-8">
+              <div className="flex flex-col items-center gap-4 px-10 py-8">
                 <h3 className="font-heading text-center text-xl font-medium tracking-tighter">
                   {card.title}
                 </h3>
+
+                <p className="text-center text-sm">{card.desc}</p>
+
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <Button
+                      variant="outline"
+                      className="h-8 cursor-pointer rounded-full text-xs"
+                    >
+                      View Site
+                      <Eye className="h-3 w-3" />
+                    </Button>
+                  </DialogTrigger>
+                  <DialogContent className="sm:max-w-3xl">
+                    <div>
+                      <CldVideoPlayer
+                        width="1920"
+                        height="1080"
+                        src={card.video}
+                      />
+                    </div>
+                  </DialogContent>
+                </Dialog>
               </div>
             </div>
           ))}
