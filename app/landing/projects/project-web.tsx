@@ -22,7 +22,7 @@ const cards = [
   {
     id: 2,
     image: "/images/medieval-portfolio.webp",
-    title: "Medeival Portfolio",
+    title: "Medieval Portfolio",
     desc: "Newspaper-inspired portfolio with medieval aesthetics for an unconventional designer.",
     video: "medieval_ymytc6",
   },
