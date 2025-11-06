@@ -28,7 +28,7 @@ const cards = [
   },
   {
     id: 3,
-    image: "/images/prop-new-mkp1.webp",
+    image: "/images/prop-new-mkp.webp",
     title: "Propatize",
     desc: "Property management platform for facility managers, residents, and security.",
     video: "propatize_hawvmi",
