@@ -41,7 +41,16 @@ const cards = [
       "I needed a professional website to showcase my value and experience, and they delivered beyond my expectations. Now my brand looks credible.",
     clientImage: "/images/aremu.jpg",
     clientName: "Aremu Anuolawapo",
-    clientTitle: "Computational Linguistok,",
+    clientTitle: "Computational Linguist,",
+  },
+  {
+    id: 5,
+    rating: 5,
+    content:
+      "Ridwan's works have such finesse that bring whatever ideas you conceive to a whole new reality. His works actually open your mind to possibilities.",
+    clientImage: "/images/dr-musab.png",
+    clientName: "Dr Obalola",
+    clientTitle: "CEO, Property Logistics Co",
   },
 ];
 
