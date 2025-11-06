@@ -10,23 +10,27 @@ const cards = [
     id: 1,
     image: "/images/propatize-mb.webp",
     title: "Propatize - Resident App",
+    desc: "Propatize gave residents, easy payments, and instant communication, and secure estate and guest access, all in one connected mobile app.",
   },
   {
     id: 2,
     image: "/images/propatize-mk.webp",
     title: "Propatize - Manager App",
+    desc: "Propatize streamlined property management, improving payments, communication, and issue resolution while boosting efficiency and resident satisfaction.",
   },
 
   {
     id: 3,
     image: "/images/yalla-mk.webp",
     title: "Yalla Savings App",
+    desc: "Yalla made ethical saving and investing simple, interest-free, and transparent, empowering users to grow wealth confidently.",
   },
 
   {
     id: 4,
     image: "/images/moniedrop-mk.webp",
     title: "Moniedrop App",
+    desc: "Participatory finance app making Ajo, Esusu, and Adashe simple and digital.",
   },
 ];
 
@@ -66,10 +70,11 @@ const ProjectUX = () => {
                 />
               </div>
 
-              <div className="flex flex-col items-center px-10 py-8">
+              <div className="flex flex-col items-center gap-4 px-10 py-8">
                 <h3 className="font-heading text-center text-xl font-medium tracking-tighter">
                   {card.title}
                 </h3>
+                <p className="px-10 text-center text-sm">{card.desc}</p>
               </div>
             </div>
           ))}

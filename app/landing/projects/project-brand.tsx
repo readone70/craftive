@@ -10,11 +10,13 @@ const cards = [
     id: 1,
     image: "/images/pl-brand.webp",
     title: "Property Logistics Co",
+    desc: "Brand identity for a property management company.",
   },
   {
     id: 2,
     image: "/images/rinse-brand.webp",
     title: "Rinsehq",
+    desc: "Brand identity for a laundry and dry-cleaning service.",
   },
 ];
 
@@ -54,10 +56,11 @@ const ProjectBrand = () => {
                 />
               </div>
 
-              <div className="flex flex-col items-center px-10 py-8">
+              <div className="flex flex-col items-center gap-4 px-10 py-8">
                 <h3 className="font-heading text-center text-xl font-medium tracking-tighter">
                   {card.title}
                 </h3>
+                <p className="px-10 text-center text-sm">{card.desc}</p>
               </div>
             </div>
           ))}

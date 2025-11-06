@@ -15,28 +15,28 @@ const cards = [
     id: 1,
     image: "/images/prop-new-mkp.webp",
     title: "Propatize",
-    desc: "A serene, modern website for Hearthub Solutions, a counseling practice helping people heal and grow.",
+    desc: "Property management platform for facility managers, residents, and security.",
     video: "propatize_hawvmi",
   },
   {
     id: 2,
     image: "/images/medieval-portfolio.webp",
     title: "Medeival Portfolio",
-    desc: "A serene, modern website for Hearthub Solutions, a counseling practice helping people heal and grow.",
+    desc: "Newspaper-inspired portfolio with medieval aesthetics for an unconventional designer.",
     video: "medieval_ymytc6",
   },
   {
     id: 3,
     image: "/images/hearthub-new-mkp.webp",
     title: "Hearthub Solutions",
-    desc: "A serene, modern website for Hearthub Solutions, a counseling brand helping people heal and grow.",
+    desc: "Counseling brand focused on healing, growth, and emotional well-being.",
     video: "hearthub-solutions_wnqjem",
   },
   {
     id: 4,
     image: "/images/phoenix-new-mkp.webp",
     title: "Phoenix Analytica",
-    desc: "A serene, modern website for Hearthub Solutions, a counseling practice helping people heal and grow.",
+    desc: "Data-driven firm specializing in analysis, market research, and ICT consulting.",
     video: "phoenix_epgbvw",
   },
 
@@ -44,7 +44,7 @@ const cards = [
     id: 5,
     image: "/images/aremu-mkp.webp",
     title: "Aremu - Computational Linguist",
-    desc: "A serene, modern website for Hearthub Solutions, a counseling practice helping people heal and grow.",
+    desc: "Portfolio for a Computational Linguist and Cognitive Scientist.",
     video: "aremu_ff6cbz",
   },
 
@@ -52,7 +52,7 @@ const cards = [
     id: 6,
     image: "/images/monie-mkp.webp",
     title: "Moniedrop",
-    desc: "A serene, modern website for Hearthub Solutions, a counseling practice helping people heal and grow.",
+    desc: "Participatory finance app making Ajo, Esusu, and Adashe simple and digital.",
     video: "moniedrop_tztyku",
   },
 ];
@@ -98,13 +98,13 @@ const ProjectWeb = () => {
                   {card.title}
                 </h3>
 
-                <p className="text-center text-sm">{card.desc}</p>
+                <p className="px-10 text-center text-sm">{card.desc}</p>
 
                 <Dialog>
                   <DialogTrigger asChild>
                     <Button
                       variant="outline"
-                      className="h-8 cursor-pointer rounded-full text-xs"
+                      className="hover:bg-primary hover:text-button-text-color h-8 cursor-pointer rounded-full text-xs"
                     >
                       View Site
                       <Eye className="h-3 w-3" />
