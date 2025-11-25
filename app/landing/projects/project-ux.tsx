@@ -4,33 +4,40 @@ import Image from "next/image";
 import React from "react";
 import { motion, useInView } from "motion/react";
 import { useRef } from "react";
+import { Button } from "@/components/ui/button";
+import { Eye } from "lucide-react";
+import Link from "next/link";
 
 const cards = [
   {
     id: 1,
     image: "/images/propatize-mb.webp",
     title: "Propatize - Resident App",
-    desc: "Propatize gave residents, easy payments, and instant communication, and secure estate and guest access, all in one connected mobile app.",
+    desc: "Resident app of a property management app.",
+    href: "https://contra.com/p/A3OY7Loq-propatize-resident-app-property-management?r=ridwan_maruf_jdq89wnh",
   },
   {
     id: 2,
     image: "/images/propatize-mk.webp",
     title: "Propatize - Manager App",
-    desc: "Propatize streamlined property management, improving payments, communication, and issue resolution while boosting efficiency and resident satisfaction.",
+    desc: "Property management app for property managers",
+    href: "https://contra.com/p/WkeMvOgL-propatize-property-management-app?r=ridwan_maruf_jdq89wnh",
   },
 
   {
     id: 3,
     image: "/images/yalla-mk.webp",
     title: "Yalla Savings App",
-    desc: "Yalla made ethical saving and investing simple, interest-free, and transparent, empowering users to grow wealth confidently.",
+    desc: "Ethical savings and investment app.",
+    href: "https://contra.com/p/EcqMEQcc-yalla-save-saving-and-investment-app?r=ridwan_maruf_jdq89wnh",
   },
 
   {
     id: 4,
     image: "/images/moniedrop-mk.webp",
     title: "Moniedrop App",
-    desc: "Participatory finance app making Ajo, Esusu, and Adashe simple and digital.",
+    desc: "Participatory finance app for Ajo, Esusu, and Adashe.",
+    href: "https://contra.com/p/mvkl3vlU-moniedrop?r=ridwan_maruf_jdq89wnh",
   },
 ];
 
@@ -75,6 +82,16 @@ const ProjectUX = () => {
                   {card.title}
                 </h3>
                 <p className="px-10 text-center text-sm">{card.desc}</p>
+
+                <Link href={card.href}>
+                  <Button
+                    variant="outline"
+                    className="hover:bg-primary hover:text-button-text-color h-8 cursor-pointer rounded-full text-xs"
+                  >
+                    View Work
+                    <Eye className="h-3 w-3" />
+                  </Button>
+                </Link>
               </div>
             </div>
           ))}

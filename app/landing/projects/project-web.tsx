@@ -13,6 +13,13 @@ import { Eye } from "lucide-react";
 const cards = [
   {
     id: 1,
+    image: "/images/prop-new-mkp.webp",
+    title: "Propatize",
+    desc: "Property management platform for facility managers, residents, and security.",
+    video: "propatize_hawvmi",
+  },
+  {
+    id: 2,
     image: "/images/positivus-mkp.webp",
     title: "Positivus",
     desc: "Marketing agency helping businesses grow through SEO, PPC, and content strategy.",
@@ -20,56 +27,46 @@ const cards = [
   },
 
   {
-    id: 2,
-    image: "/images/medieval-portfolio.webp",
-    title: "Medieval Portfolio",
-    desc: "Newspaper-inspired portfolio with medieval aesthetics for an unconventional designer.",
-    video: "medieval_ymytc6",
-  },
-  {
     id: 3,
-    image: "/images/prop-new-mkp.webp",
-    title: "Propatize",
-    desc: "Property management platform for facility managers, residents, and security.",
-    video: "propatize_hawvmi",
-  },
-
-  {
-    id: 4,
-    image: "/images/yalla-mkp.webp",
-    title: "Yalla Ride",
-    desc: "Ride-hailing service offering rickshaw and EV transport for a greener future.",
-    video: "yalla_key8fl",
-  },
-  {
-    id: 5,
     image: "/images/hearthub-new-mkp.webp",
     title: "Hearthub Solutions",
     desc: "Counseling brand focused on healing, growth, and emotional well-being.",
     video: "hearthub-solutions_wnqjem",
   },
   {
-    id: 6,
+    id: 4,
     image: "/images/phoenix-new-mkp.webp",
     title: "Phoenix Analytica",
     desc: "Data-driven firm specializing in analysis, market research, and ICT consulting.",
     video: "phoenix_epgbvw",
   },
-
+  {
+    id: 5,
+    image: "/images/yalla-mkp.webp",
+    title: "Yalla Ride",
+    desc: "Ride-hailing service offering rickshaw and EV transport for a greener future.",
+    video: "yalla_key8fl",
+  },
+  {
+    id: 6,
+    image: "/images/medieval-portfolio.webp",
+    title: "Medieval",
+    desc: "Newspaper-inspired portfolio with medieval aesthetics for an unconventional designer.",
+    video: "medieval_ymytc6",
+  },
   {
     id: 7,
-    image: "/images/aremu-mkp.webp",
-    title: "Aremu - Computational Linguist",
-    desc: "Portfolio for a Computational Linguist and Cognitive Scientist.",
-    video: "aremu_ff6cbz",
-  },
-
-  {
-    id: 8,
     image: "/images/monie-mkp.webp",
     title: "Moniedrop",
     desc: "Participatory finance app making Ajo, Esusu, and Adashe simple and digital.",
     video: "moniedrop_tztyku",
+  },
+  {
+    id: 8,
+    image: "/images/aremu-mkp.webp",
+    title: "Aremu - Computational Linguist",
+    desc: "Portfolio for a Computational Linguist and Cognitive Scientist.",
+    video: "aremu_ff6cbz",
   },
 ];
 
