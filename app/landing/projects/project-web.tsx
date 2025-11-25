@@ -13,26 +13,26 @@ import { Eye } from "lucide-react";
 const cards = [
   {
     id: 1,
+    image: "/images/hearthub-new-mkp.webp",
+    title: "Hearthub Solutions",
+    desc: "Counseling brand focused on healing, growth, and emotional well-being.",
+    video: "hearthub-solutions_wnqjem",
+  },
+  {
+    id: 2,
     image: "/images/prop-new-mkp.webp",
     title: "Propatize",
     desc: "Property management platform for facility managers, residents, and security.",
     video: "propatize_hawvmi",
   },
   {
-    id: 2,
+    id: 3,
     image: "/images/positivus-mkp.webp",
     title: "Positivus",
     desc: "Marketing agency helping businesses grow through SEO, PPC, and content strategy.",
     video: "positivusi_lgnzuc",
   },
 
-  {
-    id: 3,
-    image: "/images/hearthub-new-mkp.webp",
-    title: "Hearthub Solutions",
-    desc: "Counseling brand focused on healing, growth, and emotional well-being.",
-    video: "hearthub-solutions_wnqjem",
-  },
   {
     id: 4,
     image: "/images/phoenix-new-mkp.webp",
