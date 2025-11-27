@@ -16,7 +16,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Excelia Studio",
-  description: "Excelia Studio Website",
+  description: "Website Design for Business Owners & Founders",
 };
 
 export default function RootLayout({
